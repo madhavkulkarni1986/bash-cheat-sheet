@@ -1,7 +1,7 @@
 
-bash-cheat-sheet
+## bash-cheat-sheet
 
-Ceat sheet for bash string operations:
+# Cheat sheet for bash string operations:
 
 #--------------------------------------
 
