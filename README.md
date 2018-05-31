@@ -119,7 +119,7 @@ str2=""
 
   => echo ${str2:=jerry}                        ## prints jerry; str2 is not defined. So, jerry is assigned to str2 and its printed. if you echo $str2, you will get jerry
 
-# If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command
+If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command
 
   => echo ${str1:+jerry}                        ## prints jerry; if str1 is set, print jerry, if its not set do not set or print anything. like below
 
