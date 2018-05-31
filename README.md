@@ -3,11 +3,11 @@ bash-cheat-sheet
 
 Ceat sheet for bash string operations:
 
---------------------------------------
+#--------------------------------------
 
 All the below commands are tested on
 
---------------------------------------
+#--------------------------------------
 
 DISTRIB_ID=Ubuntu
 
@@ -22,9 +22,13 @@ DISTRIB_DESCRIPTION="Ubuntu 14.04.5 LTS"
 Find length of a string:
 
 string='abcdef'
+
   => echo ${#string}                            ## will print 6
+  
   => echo expr length $string           ## will print 6
+  
   => echo expr "${string}" : '.*'       ## will print 6
+  
 
 Working with Sub Strings:
 
