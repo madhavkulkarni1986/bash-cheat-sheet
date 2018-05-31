@@ -55,11 +55,11 @@ string='abcxyzabc'
 
   => echo ${string##a*c}                        ## no output; will strip everything between ac(inclusive) in the longest match
 
-  -> echo ${string##ab}                         ## prints c(to make the above clearer) this will strip everything from 'a' to the last 'b' and leaves only 'c'
+  -> echo ${string##a*b}                         ## prints c(to make the above clearer) this will strip everything from 'a' to the last 'b' and leaves only 'c'
 
-  => echo ${string%ac}                          ## prints abcxyz; removes the occurance of ac(i.e abc) starting from the end
+  => echo ${string%a*c}                          ## prints abcxyz; removes the occurance of ac(i.e abc) starting from the end
 
-  => echo ${string%%ac}                         ## no output; removes everyting in between a and c for the longest match
+  => echo ${string%%a*c}                         ## no output; removes everyting in between a and c for the longest match
 
   => echo ${string//xyz}                        ## prints abcabc; strip all occurance of xyz
 
