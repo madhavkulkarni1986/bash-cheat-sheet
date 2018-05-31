@@ -1,12 +1,22 @@
+
 bash-cheat-sheet
-Cheat sheet for bash string operations:
-++++++++++++++++++++++++++++++++++++++++++++++++
+
+Ceat sheet for bash string operations:
+
+--------------------------------------
+
 All the below commands are tested on
-++++++++++++++++++++++++++++++++++++++++++++++++
+
+--------------------------------------
+
 DISTRIB_ID=Ubuntu
+
 DISTRIB_RELEASE=14.04
+
 DISTRIB_CODENAME=trusty
+
 DISTRIB_DESCRIPTION="Ubuntu 14.04.5 LTS"
+
 ++++++++++++++++++++++++++++++++++++++++++++++++
 
 Find length of a string:
