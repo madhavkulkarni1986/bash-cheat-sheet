@@ -17,9 +17,11 @@ DISTRIB_CODENAME=trusty
 
 DISTRIB_DESCRIPTION="Ubuntu 14.04.5 LTS"
 
-++++++++++++++++++++++++++++++++++++++++++++++++
+#--------------------------------------
 
 Find length of a string:
+
+#--------------------------------------
 
 string='abcdef'
 
@@ -29,8 +31,11 @@ string='abcdef'
   
   => echo expr "${string}" : '.*'       ## will print 6
   
+#--------------------------------------
 
 Working with Sub Strings:
+
+#--------------------------------------
 
 string='abcdefghij'
 
@@ -42,7 +47,11 @@ string='abcdefghij'
 
   => echo ${string:(-4):2}                      ## prints gh; Print 2 characters starting at 4th character from the end
 
+#--------------------------------------
+
 String manipulation:
+
+#--------------------------------------
 
 string='abcxyzabc'
 
@@ -50,7 +59,7 @@ string='abcxyzabc'
 
   => echo ${string##a*c}                        ## no output; will strip everything between ac(inclusive) in the longest match
 
-    -> echo ${string##ab}                       ## prints c(to make the above clearer) this will strip everything from 'a' to the last 'b' and leaves only 'c'
+  -> echo ${string##ab}                         ## prints c(to make the above clearer) this will strip everything from 'a' to the last 'b' and leaves only 'c'
 
   => echo ${string%ac}                          ## prints abcxyz; removes the occurance of ac(i.e abc) starting from the end
 
@@ -66,7 +75,11 @@ string='abcxyzabc'
 
   => echo ${string/%abc/mno}            ## prints abcxyzmno; replace abc with mno if abc occurs at the en of the string
 
+#--------------------------------------
+
 Operation to toggle between upper case and lower case of a string:
+
+#--------------------------------------
 
 string="aBcDeFgHiJ"
 
@@ -88,7 +101,11 @@ string="aBcDeFgHiJ"
 
   => echo ${string~~[aBcDe]                     ## prints AbCdEFgHiJ; Toggles only the characters in set [aBcDe] from upper to lower or vice-versa
 
+#--------------------------------------
+
 Value assignments for a string variable
+
+#--------------------------------------
 
 str1=abc
 
@@ -102,7 +119,7 @@ str2=""
 
   => echo ${str2:=jerry}                        ## prints jerry; str2 is not defined. So, jerry is assigned to str2 and its printed. if you echo $str2, you will get jerry
 
-## If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command
+# If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command
 
   => echo ${str1:+jerry}                        ## prints jerry; if str1 is set, print jerry, if its not set do not set or print anything. like below
 
