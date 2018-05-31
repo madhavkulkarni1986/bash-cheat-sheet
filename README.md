@@ -1,9 +1,5 @@
 
-## bash-cheat-sheet
-
-# Cheat sheet for bash string operations:
-
-#--------------------------------------
+# Bash-cheat-sheet
 
 All the below commands are tested on
 
