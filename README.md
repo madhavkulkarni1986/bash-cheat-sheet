@@ -1,7 +1,7 @@
 
 # Bash-cheat-sheet
 
-All the below commands are tested on
+## All the below commands are tested on
 
 #--------------------------------------
 
