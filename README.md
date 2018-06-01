@@ -15,7 +15,7 @@ DISTRIB_DESCRIPTION="Ubuntu 14.04.5 LTS"
 
 #--------------------------------------
 
-Find length of a string:
+### Find length of a string:
 
 #--------------------------------------
 
@@ -29,7 +29,7 @@ string='abcdef'
   
 #--------------------------------------
 
-Working with Sub Strings:
+### Working with Sub Strings:
 
 #--------------------------------------
 
@@ -45,7 +45,7 @@ string='abcdefghij'
 
 #--------------------------------------
 
-String manipulation:
+### String manipulation:
 
 #--------------------------------------
 
@@ -73,7 +73,7 @@ string='abcxyzabc'
 
 #--------------------------------------
 
-Operation to toggle between upper case and lower case of a string:
+### Operation to toggle between upper case and lower case of a string:
 
 #--------------------------------------
 
@@ -99,7 +99,7 @@ string="aBcDeFgHiJ"
 
 #--------------------------------------
 
-Value assignments for a string variable
+### Value assignments for a string variable
 
 #--------------------------------------
 
@@ -115,7 +115,7 @@ str2=""
 
   => echo ${str2:=jerry}                        ## prints jerry; str2 is not defined. So, jerry is assigned to str2 and its printed. if you echo $str2, you will get jerry
 
-[ ----- If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command ----- ]
+###### [ ----- If you are copy pasting the commands, reset the value str2 to empty at this point, i.e str2="" Because it contains 'jerry' from above command ----- ]
 
   => echo ${str1:+jerry}                        ## prints jerry; if str1 is set, print jerry, if its not set do not set or print anything. like below
 
